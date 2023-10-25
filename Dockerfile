@@ -6,7 +6,7 @@ COPY ./src /go/src/github.com/flike/kingshard
 
 WORKDIR /go/src/github.com/flike/kingshard
 
-RUN source ./dev.sh \
+RUN source /go/src/github.com/flike/kingshard/dev.sh \
     && make \
     && ln -s /go/src/github.com/flike/kingshard/bin/kingshard /usr/local/bin/kingshard 
 
