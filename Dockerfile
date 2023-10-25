@@ -2,7 +2,7 @@ FROM golang:alpine
 
 RUN apk --no-cache add make bash
 
-COPY ./src /go/src/github.com/flike/kingshard
+COPY ./src/ /go/src/github.com/flike/kingshard/
 
 WORKDIR /go/src/github.com/flike/kingshard
 
